@@ -1,0 +1,15 @@
+<header class="banner" [style.background]="bannerUrl">
+  <div class="banner_content">
+    <h1 class="banner_title"> {{getTitle()}}</h1>
+       <div class="banner_buttons">
+    <button class="banner_button">Play</button>
+    <button class="banner_button">My List</button>
+  </div>
+    <h1 class="banner_description">
+      {{truncate(movie?.overview, 120)}}
+    </h1>
+  
+  </div>
+
+  <div class="banner_fadeBottom"></div>
+</header> 
