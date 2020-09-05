@@ -4,7 +4,7 @@
 <youtube-player [width]="getWidth()" *ngIf="videoId" videoId ="{{videoId}}" ></youtube-player>
 </div>
 <div class="row_posters">
-  <img  [ngClass]="{'row_poster_large': isLargeRow}" class="row_poster" *ngFor="let movie of movies; trackBy:movie?.id" src="{{constants.IMG_URL}}{{movie.poster_path}}" alt="{{movie.name}}" (click)="getTrailer(movie.id)">
+  <img  [ngClass]="{'row_poster_large': isLargeRow}" class="row_poster" *ngFor="let movie of movies; trackBy:movie.id" src="{{constants.IMG_URL}}{{movie.poster_path}}" alt="{{movie.name}}" (click)="getTrailer(movie.id)">
 </div>
 
 
