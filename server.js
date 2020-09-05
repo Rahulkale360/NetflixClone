@@ -5,7 +5,7 @@ app.use(express.static(__dirname + 'dist/netflixclone'));
 
 PathLocationStrategy
 app.get('',function(req, res){
-    res.sendFile(path.join(__dirname + 'dist/netflixcloneindex.html'))
+    res.sendFile(path.join(__dirname + 'dist/netflixclone/index.html'))
 })
 
  app.listen(process.env.PORT , 8080);
